@@ -59,5 +59,7 @@ static const struct memc_stm32_config config = {
 	.pinctrl_len = ARRAY_SIZE(pinctrl),
 };
 
+#if DT_NODE_HAS_STATUS(DT_INST(0, st_stm32_fmc), okay)
 DEVICE_DEFINE(memc_stm32, DT_INST_LABEL(0), memc_stm32_init, NULL, NULL,
 	      &config, POST_KERNEL, CONFIG_MEMC_INIT_PRIORITY, NULL);
+#endif
