@@ -23,6 +23,12 @@ CONFIG_PINMUX=y
 # enable GPIO
 CONFIG_GPIO=y
 
+# enable FMC
+CONFIG_MEMC=y
+
+# enable SDRAM
+CONFIG_MEMC_STM32_SDRAM=y
+
 # clock configuration
 CONFIG_CLOCK_CONTROL=y
 
