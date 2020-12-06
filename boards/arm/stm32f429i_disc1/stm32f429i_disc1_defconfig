@@ -23,6 +23,15 @@ CONFIG_PINMUX=y
 # enable GPIO
 CONFIG_GPIO=y
 
+# enable FMC
+CONFIG_MEMC=y
+
+# enable spi
+CONFIG_SPI=y
+
+# enable display
+CONFIG_ILI9340=y
+
 # clock configuration
 CONFIG_CLOCK_CONTROL=y
 
